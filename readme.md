@@ -1,4 +1,5 @@
 # Laravel Visitors Tracker
+[![GitHub forks](https://img.shields.io/github/forks/ma7moudsalem1/tracker)](https://github.com/ma7moudsalem1/tracker/network) [![GitHub stars](https://img.shields.io/github/stars/ma7moudsalem1/tracker)](https://github.com/ma7moudsalem1/tracker/stargazers)
 
 ## About
 
