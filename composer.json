@@ -1,0 +1,30 @@
+{
+    "name": "salem/tracker",
+    "description": "Track your project by getting visitors data.",
+    "keywords": ["tracker", "tracking", "visitor", "laravel", "user agent", "location"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mahmoud",
+            "email": "mahmoudsalem1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1.3",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Salem\\Tracker\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Salem\\Tracker\\TrackerServiceProvider"
+            ]
+        }
+    }
+}
