@@ -48,5 +48,8 @@ class TrackerServiceProvider extends ServiceProvider
         {
             require_once $file;
         }
+        $this->app->bind('Tracker', function (){
+            return new Track();
+        });
     }
 }

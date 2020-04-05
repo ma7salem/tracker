@@ -33,7 +33,7 @@ if(! function_exists('getBrowser')){
 if(! function_exists('getTrack')){
     function getTrack()
     {
-        return new \Salem\Tracker\Helpers\Track;
+        return new \Salem\Tracker\Track;
     }
 }
 

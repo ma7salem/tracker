@@ -1,5 +1,5 @@
 <?php
-namespace Salem\Tracker\Helpers;
+namespace Salem\Tracker;
 use Salem\Tracker\Controls\Models\Tracker as TrackerModel;
 use Salem\Tracker\Controls\Repositories\Resources\Tracker\TrackersResource;
 use Salem\Tracker\Controls\Repositories\Resources\Tracker\TrackerDetailsResource;
@@ -57,7 +57,7 @@ class Track {
      * @param integer        $numbers Numbers of the best master data (default 10).
      * @return data          return collection.
     */
-    private function getBestMaster($compare = 'country_name', $numbers = 10)
+    public function getBestMaster($compare = 'country_name', $numbers = 10)
     {
         if($compare == 'ip_address'){
             return $this->getBestDetails($compare, $numbers);
@@ -75,7 +75,7 @@ class Track {
      * @param integer        $numbers Numbers of the best details data (default 10).
      * @return data          return collection.
     */
-    private function getBestDetails($compare = 'browser', $numbers = 10)
+    public function getBestDetails($compare = 'browser', $numbers = 10)
     {
         $compare = $compare == 'ip_address' ? $compare : 'tracker_details.' . $compare;
         return $this->model->select($compare, DB::raw("COUNT('tracker_details.id') AS counts"))
