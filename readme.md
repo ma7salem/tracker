@@ -8,22 +8,27 @@
 
 ## Features
 
- * You can get this data about your visitor without each day like:
+* You can get this data about your visitor without each day like:
 
-     * **The Country**.
-     * **The City**.
-     * **The currency of the visitor country**.
-     * **Latitude and Longitude**.
-     * **Browser and the version of this browser**.
-     * **Platform**.
+   * **The Country**.
+   * **The City**.
+   * **The currency of the visitor country**.
+   * **Latitude and Longitude**.
+   * **Browser and the version of this browser**.
+   * **Platform**.
 
-  * After collecting the data from your visitors you can show them through an API in the package.
+* After collecting the data from your visitors you can show them through an API in the package.
 
-   * The package also make it easy for you to get the data that you want like:
+   * (GET) `/tracker/all` To get all the tracker records from your database.
+   * (GET) `/tracker/show/{id}` To get the tracker data by ID form your database.
+   * (GET) `/tracker/ip/{ip}` To get the IP data from your database.
 
-        * **Check if this IP Tracked before**
-        * **Last visit of this IP**
-        * **Most visitors from `` Country``,``City``,``Browser``,``Platform``**
+* The package also make it easy for you to get the data that you want like:
+
+   * **Check if this IP Tracked before**
+   * **Last visit of this IP**
+   * **Most visitors from `` Country``,``City``,``Browser``,``Platform``**
+
 ## Installation
 
    ```
