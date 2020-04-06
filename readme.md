@@ -3,7 +3,7 @@
 
 ## About
 
-`Salem\Tracker` is a Laravel package makes it easy to track your Laravel project by gathering a lot of information from your the visitor request and **IP Address**.
+`Salem\Tracker` is a Laravel package makes it easy to track your Laravel project by gathering a lot of information from your visitor request and **IP Address**.
 
 
 ## Features
