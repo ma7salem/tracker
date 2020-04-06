@@ -6,6 +6,6 @@ Route::group(['middleware' => config('tracker.middlewares'), 'prefix' => config(
     Route::post('/save', 'TrackerController@store')->name('tracker.post.save');
     Route::get('/save', 'TrackerController@store')->name('tracker.get.save');
     Route::get('/show/{id}', 'TrackerController@show')->name('tracker.get.show');
-    Route::get('/ip/{id}', 'TrackerController@getIp')->name('tracker.get.ip');
+    Route::get('/ip/{ip}', 'TrackerController@getIp')->name('tracker.get.ip');
 
 });
